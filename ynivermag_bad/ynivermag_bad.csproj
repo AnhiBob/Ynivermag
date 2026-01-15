@@ -86,6 +86,12 @@
     <EmbeddedResource Include="MenuAdminForm.resx">
       <DependentUpon>MenuAdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuSellerForm.resx">
+      <DependentUpon>MenuSellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTovarovedForm.resx">
+      <DependentUpon>MenuTovarovedForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -95,6 +101,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ShowAll.resx">
+      <DependentUpon>ShowAll.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
