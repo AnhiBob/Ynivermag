@@ -13,3 +13,8 @@ C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_
 C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.MenuSellerForm.resources
 C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.MenuTovarovedForm.resources
 C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.ShowAll.resources
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\MySql.Data.dll
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\System.Memory.dll
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\MySql.Data.xml
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\yniverma.FC453557.Up2Date

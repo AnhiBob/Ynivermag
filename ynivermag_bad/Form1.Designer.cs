@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Login = new System.Windows.Forms.TextBox();
+            this.Password = new System.Windows.Forms.TextBox();
+            this.Autorization = new System.Windows.Forms.Button();
+            this.Exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,43 +68,44 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Пароль";
             // 
-            // textBox1
+            // Login
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.textBox1.Location = new System.Drawing.Point(24, 92);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(307, 31);
-            this.textBox1.TabIndex = 3;
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.Login.Location = new System.Drawing.Point(24, 92);
+            this.Login.Name = "Login";
+            this.Login.Size = new System.Drawing.Size(307, 31);
+            this.Login.TabIndex = 3;
             // 
-            // textBox2
+            // Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.textBox2.Location = new System.Drawing.Point(24, 180);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(307, 31);
-            this.textBox2.TabIndex = 4;
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.Password.Location = new System.Drawing.Point(24, 180);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(307, 31);
+            this.Password.TabIndex = 4;
             // 
-            // button1
+            // Autorization
             // 
-            this.button1.BackColor = System.Drawing.Color.GreenYellow;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(24, 245);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(307, 51);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Войти";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Autorization.BackColor = System.Drawing.Color.GreenYellow;
+            this.Autorization.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Autorization.Location = new System.Drawing.Point(24, 245);
+            this.Autorization.Name = "Autorization";
+            this.Autorization.Size = new System.Drawing.Size(307, 51);
+            this.Autorization.TabIndex = 5;
+            this.Autorization.Text = "Войти";
+            this.Autorization.UseVisualStyleBackColor = false;
+            this.Autorization.Click += new System.EventHandler(this.Autorization_Click);
             // 
-            // button2
+            // Exit
             // 
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(24, 315);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(307, 51);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Выйти";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Exit.BackColor = System.Drawing.Color.LimeGreen;
+            this.Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Exit.Location = new System.Drawing.Point(24, 315);
+            this.Exit.Name = "Exit";
+            this.Exit.Size = new System.Drawing.Size(307, 51);
+            this.Exit.TabIndex = 6;
+            this.Exit.Text = "Выйти";
+            this.Exit.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -111,14 +113,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(356, 388);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Exit);
+            this.Controls.Add(this.Autorization);
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.Login);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -135,10 +138,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox Login;
+        private System.Windows.Forms.TextBox Password;
+        private System.Windows.Forms.Button Autorization;
+        private System.Windows.Forms.Button Exit;
     }
 }
 

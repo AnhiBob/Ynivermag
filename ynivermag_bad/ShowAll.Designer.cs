@@ -28,16 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowAll));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.AddClient = new System.Windows.Forms.Button();
+            this.InMenuClient = new System.Windows.Forms.Button();
+            this.dataGridViewClient = new System.Windows.Forms.DataGridView();
+            this.dataGridViewProduct = new System.Windows.Forms.DataGridView();
+            this.AddProduct = new System.Windows.Forms.Button();
+            this.InMenuProduct = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -72,8 +85,9 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.dataGridViewClient);
+            this.tabPage1.Controls.Add(this.InMenuClient);
+            this.tabPage1.Controls.Add(this.AddClient);
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -84,59 +98,146 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.InMenuProduct);
+            this.tabPage2.Controls.Add(this.AddProduct);
+            this.tabPage2.Controls.Add(this.dataGridViewProduct);
             this.tabPage2.Location = new System.Drawing.Point(4, 33);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(884, 354);
+            this.tabPage2.Size = new System.Drawing.Size(1055, 522);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Товары";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.button2);
+            this.tabPage3.Controls.Add(this.button1);
+            this.tabPage3.Controls.Add(this.dataGridView1);
             this.tabPage3.Location = new System.Drawing.Point(4, 33);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(884, 354);
+            this.tabPage3.Size = new System.Drawing.Size(1055, 522);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Пользователи";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // AddClient
+            // 
+            this.AddClient.BackColor = System.Drawing.Color.GreenYellow;
+            this.AddClient.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddClient.Location = new System.Drawing.Point(6, 470);
+            this.AddClient.Name = "AddClient";
+            this.AddClient.Size = new System.Drawing.Size(250, 46);
+            this.AddClient.TabIndex = 3;
+            this.AddClient.Text = "Добавить";
+            this.AddClient.UseVisualStyleBackColor = false;
+            // 
+            // InMenuClient
+            // 
+            this.InMenuClient.BackColor = System.Drawing.Color.LimeGreen;
+            this.InMenuClient.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.InMenuClient.Location = new System.Drawing.Point(789, 470);
+            this.InMenuClient.Name = "InMenuClient";
+            this.InMenuClient.Size = new System.Drawing.Size(250, 46);
+            this.InMenuClient.TabIndex = 4;
+            this.InMenuClient.Text = "В меню";
+            this.InMenuClient.UseVisualStyleBackColor = false;
+            this.InMenuClient.Click += new System.EventHandler(this.InMenuClient_Click);
+            // 
+            // dataGridViewClient
+            // 
+            this.dataGridViewClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClient.Location = new System.Drawing.Point(7, 7);
+            this.dataGridViewClient.Name = "dataGridViewClient";
+            this.dataGridViewClient.Size = new System.Drawing.Size(1032, 457);
+            this.dataGridViewClient.TabIndex = 5;
+            // 
+            // dataGridViewProduct
+            // 
+            this.dataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProduct.Location = new System.Drawing.Point(6, 6);
+            this.dataGridViewProduct.Name = "dataGridViewProduct";
+            this.dataGridViewProduct.Size = new System.Drawing.Size(1043, 425);
+            this.dataGridViewProduct.TabIndex = 0;
+            // 
+            // AddProduct
+            // 
+            this.AddProduct.BackColor = System.Drawing.Color.GreenYellow;
+            this.AddProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.AddProduct.Location = new System.Drawing.Point(6, 456);
+            this.AddProduct.Name = "AddProduct";
+            this.AddProduct.Size = new System.Drawing.Size(250, 51);
+            this.AddProduct.TabIndex = 1;
+            this.AddProduct.Text = "Добавить";
+            this.AddProduct.UseVisualStyleBackColor = false;
+            // 
+            // InMenuProduct
+            // 
+            this.InMenuProduct.BackColor = System.Drawing.Color.LimeGreen;
+            this.InMenuProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.InMenuProduct.Location = new System.Drawing.Point(799, 465);
+            this.InMenuProduct.Name = "InMenuProduct";
+            this.InMenuProduct.Size = new System.Drawing.Size(250, 51);
+            this.InMenuProduct.TabIndex = 2;
+            this.InMenuProduct.Text = "В меню";
+            this.InMenuProduct.UseVisualStyleBackColor = false;
+            this.InMenuProduct.Click += new System.EventHandler(this.InMenuClient_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(4, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1039, 417);
+            this.dataGridView1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.GreenYellow;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(6, 470);
+            this.button1.Location = new System.Drawing.Point(4, 462);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 46);
-            this.button1.TabIndex = 3;
+            this.button1.Size = new System.Drawing.Size(267, 51);
+            this.button1.TabIndex = 1;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LawnGreen;
+            this.button2.BackColor = System.Drawing.Color.LimeGreen;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(799, 470);
+            this.button2.Location = new System.Drawing.Point(776, 462);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 46);
-            this.button2.TabIndex = 4;
+            this.button2.Size = new System.Drawing.Size(267, 51);
+            this.button2.TabIndex = 2;
             this.button2.Text = "В меню";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.InMenuClient_Click);
             // 
             // ShowAll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1092, 627);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "ShowAll";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShowAll";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,7 +251,14 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button InMenuClient;
+        private System.Windows.Forms.Button AddClient;
+        private System.Windows.Forms.DataGridView dataGridViewClient;
+        private System.Windows.Forms.Button InMenuProduct;
+        private System.Windows.Forms.Button AddProduct;
+        private System.Windows.Forms.DataGridView dataGridViewProduct;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button2;
     }
 }
