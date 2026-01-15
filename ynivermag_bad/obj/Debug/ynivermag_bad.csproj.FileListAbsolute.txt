@@ -1,0 +1,11 @@
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\ynivermag_bad.exe.config
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\ynivermag_bad.exe
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\bin\Debug\ynivermag_bad.pdb
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.csproj.AssemblyReference.cache
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.Properties.Resources.resources
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.csproj.GenerateResource.cache
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.csproj.CoreCompileInputs.cache
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.exe
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.pdb
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.exe.config
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.Form1.resources
