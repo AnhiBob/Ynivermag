@@ -9,3 +9,4 @@ C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_
 C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.pdb
 C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.exe.config
 C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.Form1.resources
+C:\Users\viole\OneDrive\Desktop\ynivermag_bad\ynivermag_bad\obj\Debug\ynivermag_bad.MenuAdminForm.resources
